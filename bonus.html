@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Example</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        a {
+            color: white;
+            text-decoration: none;
+            margin-right: 15px;
+            font-size: 20px;
+        }
+
+        /*NavBar*/
+        .content-container {
+            display: flex;
+            justify-content: space-between;
+            /* จัดระยะห่างระหว่าง Body Zone และ Table Zone */
+            align-items: flex-start;
+            /* จัดให้อยู่ด้านบน */
+            margin-top: 20px;
+        }
+
+        .navbar {
+            background-color: cornflowerblue;
+            margin-bottom: 70px;
+        }
+
+        .navbar a {
+            color: white;
+            /* สีข้อความของลิงก์ */
+            text-decoration: none;
+            margin-right: 15px;
+            font-size: 16px;
+        }
+
+        .navbar i {
+            margin-right: 5px;
+            /* เพิ่มระยะห่างระหว่างไอคอนกับข้อความ */
+        }
+
+        .navbar .ms-auto img {
+            width: 30px;
+            /* ปรับขนาดธง */
+            height: 20px;
+            border-radius: 5px;
+        }
+
+        /*Boday ส่วน Banner Left */
+        .body-zone {
+            width: 30%;
+            /* กำหนดความกว้างของ Body Zone */
+
+        }
+
+        /*Boday ส่วน Banner Right */
+        .table-zone {
+            width: 65%;
+            /* กำหนดความกว้างของ Table Zone */
+
+        }
+
+        table {
+            width: 95%;
+           
+        }
+
+        th,
+        td {
+            padding: 10px;
+            /* สร้าง Padding ในการเพิ่มส่วนขยายในส่วนตาราง */
+            border-bottom: 1px solid #ddd;
+            /* เส้นเฉพาะด้านบน */
+            font-weight: bold;
+
+        }
+
+        th {
+            font-weight: lighter;
+            /* แก้ขนาด ฟร้อน */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--Nav Zone-->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a href="#"><i class="fa-solid fa-house"></i>Home</a>
+
+            <div class="dropdown">
+                <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">Shift</a>
+            </div>
+            <div class="dropdown">
+                <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">OT</a>
+            </div>
+            <div class="dropdown">
+                <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">Time Attendance</a>
+            </div>
+            <div class="dropdown">
+                <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">Leave</a>
+            </div>
+            <div class="dropdown">
+                <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">E-Medical</a>
+            </div>
+            <div class="dropdown">
+                <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">Admin</a>
+            </div>
+
+
+
+            <!-- ส่วนข้อมูลผู้ใช้ -->
+            <div class="ms-auto d-flex align-items-center">
+                <i class="fa-solid fa-user" style="color: white; margin-right: 10px;"></i>
+                <span class="me-3" style="color: white;">Poomin Wonsanthia</span>
+                <img src="https://cdn.britannica.com/38/4038-050-BDDBA6AB/Flag-Thailand.jpg" alt="Flag TH">
+                <span style="color: white; margin: 0px 10px 0px 10px;">|</span>
+                <img src="https://cdn.pixabay.com/photo/2017/09/01/00/10/united-kingdom-2702679_640.jpg" alt="Flag EN">
+            </div>
+        </div>
+    </nav>
+
+    <!--Content Container-->
+    <div class="container-fluid content-container">
+        <!--Body Zone-->
+        <div class="body-zone" style="width: 400px; margin-left: 7rem;">
+            <div style="text-align: center;">
+                <h4 style="font-size: 40px; font-weight: lighter; margin-bottom: 2rem;">Wednesday</h4>
+                <h1 style="font-size: 100px; font-weight: 400; margin-bottom: 2rem;">20</h1>
+                <h4 style="font-size: 40px; font-weight: lighter; margin-bottom: 4rem;">November</h4>
+            </div>
+
+            <!-- Info Zone -->
+            <hr style="margin-bottom: 2rem;">
+            <div style="margin-left: 1rem;">
+                <div class="info-section">
+                    <div style="display: flex;">
+                        <i class="fas fa-id-badge"></i>
+                        <div style="margin-left: 8px;">
+                            <p>0808360631</p>
+                            <p>Miss. Nantana Meechaw</p>
+                        </div>
+                    </div>
+
+                    <p><i class="fas fa-briefcase"></i> HR Digital Officer</p>
+                </div>
+            </div>
+
+            <!-- Option Zone -->
+            <hr style="margin-bottom: 2rem;">
+            <div style="margin-left: 1rem;">
+                <div class="chart-links " style="color: cornflowerblue;">
+                    <p><i class="fas fa-id-badge"></i> Leave Chart</p>
+                    <p><i class="fas fa-user"></i> Time Attendance Chart</p>
+                </div>
+            </div>
+            <hr style="margin-top: 2rem;">
+
+        </div>
+
+        <!--Table Zone-->
+        <div class="table-zone">
+            <div >
+                <div style="justify-content: space-between;">
+                    <i class="fas fa-arrow-left arrow" style=" position: absolute;
+                    top: 50%;
+                    transform: translateX(-35px);
+                    font-size: 24px;
+                    color: gray;
+                    cursor: pointer;"></i>
+
+            <i class="fas fa-arrow-right arrow" style=" position: absolute;
+            top: 50%;
+            transform: translateX(1080px);
+            font-size: 24px;
+            color: gray;
+            cursor: pointer;"></i>
+                </div>
+                <div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Date</td>
+                                <td>Shift</td>
+                                <td>Clock in - out</td>
+                                <td>Time Attendance</td>
+                                <td>Leave</td>
+                                <td>OT</td>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <th>Mon <br> xx/xx/xxxx</th>
+                                <th></th>
+                                <th></th>
+                                <th>
+                                    <div>
+                                        <i class="fas fa-circle"></i>
+                                        Time
+                                    </div>
+                                </th>
+                                <th>
+                                    <div>
+                                        <i class="fas fa-circle"></i>
+                                        Leave
+                                    </div>
+                                </th>
+                                <th>
+                                    <div>
+                                        <i class="fas fa-circle"></i>
+                                        Time
+                                    </div>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>Tue <br> xx/xx/xxxx</th>
+                                <th></th>
+                                <th></th>
+                                <th>
+                                    <div>
+                                        <i class="fas fa-circle"></i>
+                                        Time
+                                    </div>
+                                </th>
+                                <th>
+                                    <div>
+                                        <i class="fas fa-circle"></i>
+                                        Leave
+                                    </div>
+                                </th>
+                                <th>
+                                    <div>
+                                        <i class="fas fa-circle"></i>
+                                        Time
+                                    </div>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>Wed <br> xx/xx/xxxx</th>
+                                <th></th>
+                                <th></th>
+                                <th>
+                                    <div>
+                                        <i class="fas fa-circle"></i>
+                                        Time
+                                    </div>
+                                </th>
+                                <th>
+                                    <div>
+                                        <i class="fas fa-circle"></i>
+                                        Leave
+                                    </div>
+                                </th>
+                                <th>
+                                    <div>
+                                        <i class="fas fa-circle"></i>
+                                        Time
+                                    </div>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>Thu <br> xx/xx/xxxx</th>
+                                <th></th>
+                                <th></th>
+                                <th>
+                                    <div>
+                                        <i class="fas fa-circle"></i>
+                                        Time
+                                    </div>
+                                </th>
+                                <th>
+                                    <div>
+                                        <i class="fas fa-circle"></i>
+                                        Leave
+                                    </div>
+                                </th>
+                                <th>
+                                    <div>
+                                        <i class="fas fa-circle"></i>
+                                        Time
+                                    </div>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>Fri <br> xx/xx/xxxx</th>
+                                <th></th>
+                                <th></th>
+                                <th>
+                                    <div>
+                                        <i class="fas fa-circle"></i>
+                                        Time
+                                    </div>
+                                </th>
+                                <th>
+                                    <div>
+                                        <i class="fas fa-circle"></i>
+                                        Leave
+                                    </div>
+                                </th>
+                                <th>
+                                    <div>
+                                        <i class="fas fa-circle"></i>
+                                        Time
+                                    </div>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>Sat <br> xx/xx/xxxx</th>
+                                <th></th>
+                                <th></th>
+                                <th>
+                                    <div>
+                                        <i class="fas fa-circle"></i>
+                                        Time
+                                    </div>
+                                </th>
+                                <th>
+                                    <div>
+                                        <i class="fas fa-circle"></i>
+                                        Leave
+                                    </div>
+                                </th>
+                                <th>
+                                    <div>
+                                        <i class="fas fa-circle"></i>
+                                        Time
+                                    </div>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>Sun <br> xx/xx/xxxx</th>
+                                <th></th>
+                                <th></th>
+                                <th>
+                                    <div>
+                                        <i class="fas fa-circle"></i>
+                                        Time
+                                    </div>
+                                </th>
+                                <th>
+                                    <div>
+                                        <i class="fas fa-circle"></i>
+                                        Leave
+                                    </div>
+                                </th>
+                                <th>
+                                    <div>
+                                        <i class="fas fa-circle"></i>
+                                        Time
+                                    </div>
+                                </th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Under Button Zone -->
+            <div class="row" style="margin-top: 3rem; margin-right: 43px;">
+                <!-- Left Section -->
+                <div class="col-4 footer-buttons">
+                    <span><i class="fas fa-arrow-left"></i> Month</span>
+                    <span>Today</span>
+                    <span>Month <i class="fas fa-arrow-right"></i></span>
+                </div>
+
+                <!-- Right Section -->
+                <div class="col-4 offset-4 text-end">
+                    <button class="btn btn-danger btn-sm">Miss</button>
+                    <button class="btn btn-warning btn-sm">Late</button>
+                    <button class="btn btn-sm text-white" style="background-color: indigo;"">Early</button>
+                <button class=" btn btn-primary btn-sm">Leave</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
